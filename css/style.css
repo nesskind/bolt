@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+.body {
+  font-family: "Lato";
+}
+
+.inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* header class="header clearfix"部分 */
+
+.header {
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+  width: 100%;
+}
+
+.header__inner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bolt__content {
+  padding: 25px 0 10px 0;
+}
+
+.fa-bolt {
+  font-size: 25px;
+  color:#4e4e4e;
+  
+}
+
+.header__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header__contents {
+  padding: 14px 12px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #74cfae;
+  transition: 0.3s;
+  margin-left: 800px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__contents:hover {
+  background-color: #333;
+}
+
+/* section class="boltTheme部分 */
+
+.boltTheme {
+  background-color: #f2f2f2;
+  text-align: center;
+  font-family: "Lato";
+  padding: 250px 0px 250px;
+}
+
+.boltTheme h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.boltTheme p {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+.WhatWeCanDo {
+  background-color: #74cfae;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  padding: 50px 15px 0px;
+}
+
+.WhatWeCanDo__inner {
+  display: flex;
+  padding-left: 300px;
+} 
+
+.WhatWeCanDo__img {
+  display: inline-block;
+}
+
+.WhatWeCanDo__text {
+  color: #fff;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0 35px;
+  font-size: 24px;
+  font-family: "raleway";
+}
+
+.main__text {
+  padding-left: 100px;
+}
+
+.WhatWeCanDo__text h1 {
+  font-size: 24px;
+  margin-bottom: 35px;
+  padding-top: 50px;
+}
+
+.WhatWeCanDo__text p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Lato";
+  word-break: keep-all;
+  padding-top: 35px;
+  padding-left: 100px;
+  line-height: 1.7;
+}
+
+/* article class="olw部分 */
+
+.olw {
+  display: flex;
+}
+
+.olw__title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-family: "Raleway";
+}
+
+.img__box {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.img__box__contents {
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.img__box__contents:hover {
+  opacity: 0.6;
+}
+
+.img__box__contents:nth-child(2) {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.img__box__contents:nth-child(5) {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.img__box__contents:nth-child(3) {
+  margin-bottom: 80px;
+}
+
+  /* width: 20px;
+  marginは要素との幅を取る
+  paddingは自分の領域  */
+
+
+.olw__button__link {
+  display: inline-block;
+  padding: 14px 20px;
+  background-color: #74cfae;
+  margin-left: 90px;
+  text-decoration: none;
+}
+
+.olw__e-mail {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.olw__content {
+  font-family: "Raleway";
+  line-height: 1.5;
+}
+
+.olw__content__text {
+  padding-bottom: 70px;
+}
+
+/*section class="ourSkills部分*/
+
+.ourSkills {
+  background-color: #4e4e4e;
+}
+
+.ourSkills__inner {
+  padding: 70px 0 100px 0;
+}
+
+.ourSkills__title {
+  color: #c0c0c0;
+  font-family: "Raleway";
+  font-size: 18px;
+}
+
+.ourSkills__contents {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.ourSkills__img {
+  display: flex;
+  justify-content: center;
+}
+
+.ourSkills figure {
+  margin-left: 180px;
+}
+
+.ourSkills figure:first-child {
+  margin-left: 0px;
+}
+
+/* nav class="access部分 */
+
+.access__inner {
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.access__inner li {
+  width: 185px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 30px;
+  transition: .3s;
+}
+
+.access__inner a {
+  color: #74cfae;
+  cursor: pointer;
+  display: block;
+}
+
+.access__inner li:hover {
+  background-color: #fff;
+}
+
+/* footer class="footer"部分 */
+
+.footer {
+  background-color: #74cfae;
+}
+
+.footer__inner {
+  text-align: end;
+  padding: 20px 0 25px 0;
+}
+
+.footer__text {
+  color: #fff;
+}
