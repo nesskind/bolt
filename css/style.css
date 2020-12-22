@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.body {
+body {
   font-family: "Lato";
 }
 
@@ -34,16 +34,14 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 
 .bolt__content {
-  padding-top: 15px;
 }
 
 .fa-bolt {
-  font-size: 50px;
+  font-size: 40px;
   color:#4e4e4e ;
 }
 
@@ -53,7 +51,6 @@
   color: #fff;
   background-color: #74cfae;
   transition: 0.3s;
-  margin-left: 800px;
   display: inline-block;
   text-decoration: none;
 }
@@ -71,17 +68,17 @@
 .boltTheme {
   background-color: #f2f2f2;
   text-align: center;
-  font-family: "Lato";
   padding: 250px 0px 250px;
 }
 
-.boltTheme h1 {
+.main__title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
+  font-family: "Raleway";
 }
 
-.boltTheme p {
+.sub__title {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
@@ -133,7 +130,6 @@
   color: #fff;
   line-height: 28px;
   font-weight: 400;
-  font-family: "Lato";
   word-break: keep-all;
   padding-top: 35px;
   padding-left: 100px;
@@ -144,10 +140,10 @@
 
 .olw {
   display: flex;
+  padding: 60px 0 70px;
 }
 
 .olw__title {
-  margin-top: 60px;
   margin-bottom: 40px;
   font-size: 24px;
   font-family: "Raleway";
@@ -160,11 +156,12 @@
 
 .img__box__contents {
   color: #fff;
-  transition: all 0.3s ease 0s;
+  opacity: 0.7;
 }
 
 .img__box__contents:hover {
-  opacity: 0.6;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
 }
 
 .img__box__contents:nth-child(2) {
@@ -193,6 +190,7 @@
   margin-left: 90px;
   text-decoration: none;
   color: #fff;
+  transition: 0.3s;
 }
 
 .olw__button__link:hover {
@@ -210,17 +208,10 @@
   line-height: 1.5;
 }
 
-.olw__content__text {
-  padding-bottom: 70px;
-}
-
 /*section class="ourSkills部分*/
 
 .ourSkills {
   background-color: #4e4e4e;
-}
-
-.ourSkills__inner {
   padding: 70px 0 100px 0;
 }
 

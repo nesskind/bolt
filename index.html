@@ -24,8 +24,8 @@
       <main class="main">
         <section class="boltTheme">
           <div class="inner">
-            <h1>Bolt Theme</h1>
-            <p>FREE BOOTSTRAP THEMES</p>
+            <h1 class="main__title">Bolt Theme</h1>
+            <p class="sub__title">FREE BOOTSTRAP THEMES</p>
           </div>
         </section>
           <section class="WhatWeCanDo">
@@ -105,14 +105,13 @@
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fas fa-envelope"></i></a></li>
               </ul>
-            </div>
+              <footer class="footer">
+                <div class="inner footer__inner">
+                  <p class="footer__text">Crafted with♥by BlackTie.co.</p>
+                </div>
+              </footer>
           </nav>
       </main>
-        <footer class="footer">
-          <div class="inner footer__inner">
-            <p class="footer__text">Crafted with♥by BlackTie.co.</p>
-          </div>
-        </footer>
     </div>
   </body>
 </html>
@@ -137,3 +136,31 @@ our skilタイトル大きさ修正。　☑
 画像の指マーク　ハーフをつける。　☑
 
 余分なクリアフィックスの削除。　☑ -->
+
+<!-- ## 修正点
+​
+### 全体的な修正
+- `footer`だけ、`wrapper`の外にありませんか？
+  `wrapper`の内側にあるのが一般的なので移動しましょう！　☑
+ 
+- fontについてですが、各セクションごとに当てていると、メンテナンス性が下がります。(fontの仕様変更の際に変更箇所が増える)
+  ですので、 giztechに書いてある通り `ベースとなるフォントをCSSファイルで、bodyタグをセレクタにして指定` しましょう！ ☑
+  
+- 各セクションごとの、paddingをとる位置に統一感がないです！
+  例えば、`Bolt Theme` や `WHAT WE CAN DO?`はそれぞれ`.BoltTheme` と `.WhatWeCanDo` で指定してますよね？
+  でも他の `OUR LATEST WORK` の `.olw` などは、paddingを子要素のタイトルだったりテキストのグループでとってますね！
+  これは良くないので、 `Bolt Theme` のpaddingのとり方に合わせましょう！  ☑
+​
+### header
+- タイトルのフォントが違います！(画像添付します)
+  よーくデザインと見比べてみましょう！    ☑
+​
+​
+### OUR LATEST WORK
+- 画像のopacityが違うかな！giztechの仕様書の箇所をもう一度読んでみて！ ☑
+​
+- `Email Me!`にhoverした際のtransitionが効いてないです　　☑
+​
+​
+### OUR SKILLS
+- タイトルのテキストカラーが違うかな！　　☑ -->　　
