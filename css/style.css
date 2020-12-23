@@ -29,8 +29,10 @@ a {
 .header {
   position: fixed;
   background-color: #fff;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header__inner {
@@ -98,6 +100,10 @@ a {
   vertical-align: bottom;
 }
 
+.main__text {
+  font-family: "Raleway";
+}
+
 .WhatWeCanDo__text {
   color: #fff;
   vertical-align: top;
@@ -105,21 +111,13 @@ a {
   text-align: center;
   margin: 20px 0px 0px 100px;
   font-size: 24px;
-  font-family: "raleway";
 }
 
-.WhatWeCanDo__text h1 {
-  font-size: 24px;
-  padding-top: 50px;
-}
-
-.WhatWeCanDo__text p {
+.sub__text {
+  width: 650px;
   font-size: 20px;
   color: #fff;
-  line-height: 28px;
-  font-weight: 400;
-  word-break: keep-all;
-  padding-top: 35px;
+  margin-top: 35px;
   line-height: 1.7;
 }
 
@@ -133,31 +131,36 @@ a {
   font-size: 24px;
   font-family: "Raleway";
   text-align: center;
+  color: #4e4e4e;
 }
 
 .img__box {
   display: flex;
   flex-wrap: wrap; 
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
-.img__box__contents {
+.img__box li {
   color: #fff;
   opacity: 0.7;
   margin-left: 100px;
+  transition: 0.3s;
 }
 
-.img__box__contents:hover {
+.img__box li:hover {
   opacity: 1;
-  transition: all 0.3s ease 0s;
 }
 
-.img__box__contents:nth-child(3n+1) {
+.img__box li:nth-child(3n+1) {
   margin-left: 0;
 }
 
-.img__box__contents:nth-child(n+4) {
+.img__box li:nth-child(n+4) {
   margin-top: 80px;
+}
+
+.img__box li a {
+  display: block;
 }
 
   /* width: 20px;
@@ -175,6 +178,7 @@ a {
   margin-left: 90px;
   color: #fff;
   transition: 0.3s;
+  font-size: 12px;
 }
 
 .olw__button__link:hover {
@@ -188,8 +192,12 @@ a {
 }
 
 .olw__content {
-  font-family: "Raleway";
   line-height: 1.5;
+}
+
+.olw__content__text {
+  width: 465px;
+  color: #4e4e4e;
 }
 
 /*section class="ourSkills部分*/
@@ -200,7 +208,7 @@ a {
 }
 
 .ourSkills__title {
-  color: #c0c0c0;
+  color: #fff;
   font-family: "Raleway";
   font-size: 24px;
   text-align: center;

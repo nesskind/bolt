@@ -35,39 +35,51 @@
             </div>
             <div class="WhatWeCanDo__text">
               <h2 class="main__text">WHAT WE CAN DO?</h2>
-              <p class="sub__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem
-                Ipsum has been the industry's standard dummy text ever since the<br> 1500s, when an unknown printer took a
-                galley of type and scrambled it to<br> make a type specimen book.</p>
+              <p class="sub__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.</p>
             </div>
           </div>
         </section>
         <article class="olw">
           <div class="inner olw__inner">
             <h2 class="olw__title">OUR LATEST WORK</h2>
-            <div class="img__box">
-              <a href="#" class="img__box__contents">
-                <img src="img/01.jpg">
-              </a>
-              <a href="#" class="img__box__contents">
-                <img src="img/02.jpg">
-              </a>
-              <a href="#" class="img__box__contents">
-                <img src="img/03.jpg">
-              </a>
-              <a href="#" class="img__box__contents">
-                <img src="img/04.jpg">
-              </a>
-              <a href="#" class="img__box__contents">
-                <img src="img/05.jpg">
-              </a>
-              <a href="#" class="img__box__contents">
-                <img src="img/06.jpg">
-              </a>
-            </div>
+            <ul class="img__box">
+              <li>
+                <a href="#" class="img__box__contents">
+                  <img src="img/01.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="img__box__contents">
+                  <img src="img/02.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="img__box__contents">
+                  <img src="img/03.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="img__box__contents">
+                  <img src="img/04.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="img__box__contents">
+                  <img src="img/05.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="img__box__contents">
+                  <img src="img/06.jpg">
+                </a>
+              </li>
+            </ul>
             <div class="olw__e-mail">
               <div class="olw__content">
-                <p class="olw__content__text">Lorem Ipsum is simply dummy text of the printing and typesetting<br>
-                  industry. Lorem Ipsum has been the industry's standard dummy<br> text ever.</p>
+                <p class="olw__content__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
               </div>
               <div class="olw__button">
                 <a href="#" class="olw__button__link">Email Me!</a>
@@ -98,15 +110,15 @@
             </div>
           </div>
         </section>
+        <nav class="access">
+          <ul class="inner access__inner">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </nav>
       </main>
-      <nav class="access">
-        <ul class="inner access__inner">
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-      </nav>
       <footer class="footer">
         <div class="inner footer__inner">
           <p class="footer__text">Crafted with&hearts;by BlackTie.co.</p>
@@ -117,50 +129,93 @@
 </html>
 
 <!-- 初回レビュー修正点
-コンタクトボタンのテキストの色修正　☑
+コンタクトボタンのテキストの色修正☑
 
 コンタクトボタン名称修正。☑
 
-ヘッダー部分隣り合わせのメインタグパディング７0とる余分に　☑
+ヘッダー部分隣り合わせのメインタグパディング７0とる余分に☑
 
-imgの余分な隙間を消す。　☑
+imgの余分な隙間を消す。☑
 
-ヘッダー横並び　要らないクリアフィックスを消し　ジャスティファイを使う。☑
+ヘッダー横並び要らないクリアフィックスを消しジャスティファイを使う。☑
 
-下のボタン要素を修正　上と同じテキストを黒。　☑
+下のボタン要素を修正上と同じテキストを黒。☑
 
-our skilタイトル大きさ修正。　☑
+our skilタイトル大きさ修正。☑
 
-下のアワースキル部分のテキストの色を修正。　
+下のアワースキル部分のテキストの色を修正。
 
-画像の指マーク　ハーフをつける。　☑
+画像の指マークハーフをつける。☑
 
-余分なクリアフィックスの削除。　☑ -->
+余分なクリアフィックスの削除。☑ -->
 
 <!-- ## 修正点
 ​
 ### 全体的な修正
 - `footer`だけ、`wrapper`の外にありませんか？
-  `wrapper`の内側にあるのが一般的なので移動しましょう！　☑
+`wrapper`の内側にあるのが一般的なので移動しましょう！☑
 
 - fontについてですが、各セクションごとに当てていると、メンテナンス性が下がります。(fontの仕様変更の際に変更箇所が増える)
-  ですので、 giztechに書いてある通り `ベースとなるフォントをCSSファイルで、bodyタグをセレクタにして指定` しましょう！ ☑
-  
+ですので、 giztechに書いてある通り `ベースとなるフォントをCSSファイルで、bodyタグをセレクタにして指定` しましょう！ ☑
+
 - 各セクションごとの、paddingをとる位置に統一感がないです！
-  例えば、`Bolt Theme` や `WHAT WE CAN DO?`はそれぞれ`.BoltTheme` と `.WhatWeCanDo` で指定してますよね？
-  でも他の `OUR LATEST WORK` の `.olw` などは、paddingを子要素のタイトルだったりテキストのグループでとってますね！
-  これは良くないので、 `Bolt Theme` のpaddingのとり方に合わせましょう！  ☑
+例えば、`Bolt Theme` や `WHAT WE CAN DO?`はそれぞれ`.BoltTheme` と `.WhatWeCanDo` で指定してますよね？
+でも他の `OUR LATEST WORK` の `.olw` などは、paddingを子要素のタイトルだったりテキストのグループでとってますね！
+これは良くないので、 `Bolt Theme` のpaddingのとり方に合わせましょう！  ☑
 ​
 ### header
 - タイトルのフォントが違います！(画像添付します)
-  よーくデザインと見比べてみましょう！    ☑
+よーくデザインと見比べてみましょう！    ☑
 ​
 ​
 ### OUR LATEST WORK
 - 画像のopacityが違うかな！giztechの仕様書の箇所をもう一度読んでみて！ ☑
 ​
-- `Email Me!`にhoverした際のtransitionが効いてないです　　☑
+- `Email Me!`にhoverした際のtransitionが効いてないです☑
 ​
 ​
 ### OUR SKILLS
 - タイトルのテキストカラーが違うかな！☑ -->
+
+<!-- ## 修正点
+​
+### 全体的なもの
+- まだフォントが違う箇所があります！
+今回フォントは2種類使ってますね！
+デザインからは掴みづらいんですが、 **タイトル** と **その他テキスト** で使い分けています！
+つまり目立たせたいタイトルは `Raleway`、
+その他(デフォルト)は、`Lato`という使い分けになっています!
+こちら意識してもう一度やってみましょう！
+
+- `<nav>` の塊も `<main>` の中です！ ☑
+​
+​
+### header
+- `position: fixed` を使っているので、 `top` と `left` などの2方向指定も必ずしましょう！
+​
+- `z-index: 1`になっていますが、 「他の要素よりは上に表示したいけど、ヘッダーよりは下に表示したい」要素ができた時に
+headerのz-indexも2に修正する必要が出てきますね！手間が増えてしまいます。
+headerは基本的に常に上に来るので、z-indexは100くらいにしておきましょう！ ☑
+
+​
+### Bolt Theme
+- 先述したフォントが違うだけ！☑
+​
+​
+### WHAT WE CAN DO?
+- タイトルとテキストの隙間は `margin` かな！
+​
+- テキストの改行に `<br>` は使わないようにしましょう！
+理由としてはレスポンシブ対応の際に手間が増えてしまいます！
+テキストを折り返したいなら `width` を定めていい感じになるようにしましょう☑
+​
+- ここの画像のかたまりも `ul` `li` を使いましょう！☑
+​
+### OUR LATEST WORK
+- タイトルと画像のmarginの値がデザインと違います！☑
+​
+- 画像からhoverを外す時にtransitionが効いてないです！☑
+​
+​
+### OUR SKILLS
+- 前回の修正点でも書きましたが、タイトル色が違うよ！☑ -->
