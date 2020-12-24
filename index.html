@@ -22,19 +22,19 @@
         </div>
       </header>
       <main class="main">
-        <section class="boltTheme">
+        <div class="boltTheme">
           <div class="inner">
-            <h1 class="main__title">Bolt Theme</h1>
-            <p class="sub__title">FREE BOOTSTRAP THEMES</p>
+            <h1 class="main__title is-raleway">Bolt Theme</h1>
+            <p class="sub__title is-raleway">FREE BOOTSTRAP THEMES</p>
           </div>
-        </section>
+        </div>
         <section class="WhatWeCanDo">
           <div class="inner WhatWeCanDo__inner">
             <div class="WhatWeCanDo__img">
-              <img class="iPhone" src="img/iphone.png" alt="iPhone">
+              <img src="img/iphone.png" alt="iPhone">
             </div>
             <div class="WhatWeCanDo__text">
-              <h2 class="main__text">WHAT WE CAN DO?</h2>
+              <h2 class="main__text is-raleway">WHAT WE CAN DO?</h2>
               <p class="sub__text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -45,36 +45,36 @@
         </section>
         <article class="olw">
           <div class="inner olw__inner">
-            <h2 class="olw__title">OUR LATEST WORK</h2>
+            <h2 class="olw__title is-raleway">OUR LATEST WORK</h2>
             <ul class="img__box">
               <li>
                 <a href="#" class="img__box__contents">
-                  <img src="img/01.jpg">
+                  <img src="img/01.jpg" alt="スマートフォンデザイン画像">
                 </a>
               </li>
               <li>
                 <a href="#" class="img__box__contents">
-                  <img src="img/02.jpg">
+                  <img src="img/02.jpg" alt="ゴーレム">
                 </a>
               </li>
               <li>
                 <a href="#" class="img__box__contents">
-                  <img src="img/03.jpg">
+                  <img src="img/03.jpg" alt="性別">
                 </a>
               </li>
               <li>
                 <a href="#" class="img__box__contents">
-                  <img src="img/04.jpg">
+                  <img src="img/04.jpg" alt="ペイント">
                 </a>
               </li>
               <li>
                 <a href="#" class="img__box__contents">
-                  <img src="img/05.jpg">
+                  <img src="img/05.jpg" alt="惑星を支える巨人">
                 </a>
               </li>
               <li>
                 <a href="#" class="img__box__contents">
-                  <img src="img/06.jpg">
+                  <img src="img/06.jpg" alt="ロボット">
                 </a>
               </li>
             </ul>
@@ -93,7 +93,7 @@
         </article>
         <section class="ourSkills">
           <div class="inner ourSkills__inner">
-            <h2 class="ourSkills__title">OUR SKILLS</h2>
+            <h2 class="ourSkills__title is-raleway">OUR SKILLS</h2>
             <div class="ourSkills__contents">
               <figure>
                 <img src="img/circle_01.png" alt="JavaScript">
@@ -225,3 +225,61 @@ headerは基本的に常に上に来るので、z-indexは100くらいにして�
 ​
 ### OUR SKILLS
 - 前回の修正点でも書きましたが、タイトル色が違うよ！☑ -->
+
+<!-- ## 修正点
+​
+### 全体的な修正
+- fontよくなってますね！
+ただ、いまのCSSは`font-family: "Raleway";`という記述が複数回でてますね。
+もしフォントが変わったら複数箇所修正が必要なので手間ですね！
+なので、下記のようなフォント用のクラスを作って
+```css
+.is-raleway {
+font-family: "Raleway";
+}
+```
+これをHTML側で`Raleway`を適用させたいDOMにクラス追加しましょう！
+```html
+<h1 class="main__title is-raleway">Bolt Theme</h1>
+☑
+```
+​
+### header
+- OK!
+​
+​
+### Bolt Theme
+- `section` タグで組んでますが、 `div` で組むのが正しいです！
+理由はgiztechの仕様書に書いてあるので探してみて！
+☑
+​
+​
+### What we can do?
+- OK!
+​
+### OUR LATEST WORK
+- `img` タグにはalt属性も付けましょう！
+必須ではないんだけど、指定するメリットの方が大きいので必ずつけるようにしておこう！
+https://www.asobou.co.jp/blog/web/alt
+☑
+​
+- ここの画像も、 `iphone` と同じく下に若干の隙間ができるので `vertical-align: bottom` が必要です！
+画像が増えるたびに指定するの面倒くさいので、`img`タグに指定しちゃいましょう！
+```css
+img {
+vertical-align: bottom;
+}
+```
+☑
+​
+### OUR SKILLS
+- OK!
+​
+​
+### nav
+- セクションのpaddingを指定する要素が他のところと違います！(navはinnerで指定してる)
+​☑
+​
+### footer
+- `nav` と同じく `footer` のpaddingをとる位置に統一感がないです！ -->
+<!-- ☑ -->
