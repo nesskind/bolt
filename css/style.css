@@ -28,6 +28,7 @@ img {
   vertical-align: bottom;
 }
 
+
 .clearfix::after {
   content: "";
   display: block;
@@ -280,3 +281,141 @@ img {
 .footer__text {
   color: #fff;
 }
+
+/* レスポンシブ対応部分 */
+
+@media screen and (max-width:767px) {
+
+  .inner {
+    width: 97%;
+    text-align: center;
+  }
+
+  .header__button {
+    display: none;
+  }
+  .hamburgerMenu {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  .hamburgerMenu span {
+    width: 30px;
+    height: 1px;
+    background: #666;
+    border-radius: 4px;
+    display: block;
+    margin-top: 8px;
+  }
+
+  .hamburgerMenu span:first-child {
+    margin-top: 0;
+  }
+
+  .boltTheme {
+    padding: 160px 0 130px;
+  }
+
+
+  .WhatWeCanDo {
+    padding: 50px 0;
+  }
+
+  .WhatWeCanDo__text {
+    margin: 0;
+  }
+
+
+  .main__text {
+    margin-top: 10px;
+  }
+
+  .sub__text {
+    width: 97%;
+  }
+
+
+  .img__box {
+    text-align: center;
+    display: block;
+  }
+
+
+  .img__box li {
+    margin-left: 0;
+  }
+
+  .img__box li:nth-child(n+4) {
+    margin-top: 0;
+  }
+
+  .img__box li:nth-child(4) {
+    margin-top: 60px;
+  }
+
+
+  .olw__e-mail {
+    display: block;
+  }
+
+
+  .olw__content__text {
+    width: 97%;
+  }
+
+
+  .olw__button__link {
+    margin-left: 0;
+  }
+
+
+  .olw__button {
+    padding-top: 25px;
+  }
+
+
+  .ourSkills {
+    width: 97%;
+  }
+
+
+  .ourSkills__contents {
+    text-align: center;
+    display: block;
+  }
+
+
+  .ourSkills figure {
+    margin-left: 0;
+  }
+
+
+  .our__text {
+    margin: 20px 20px 60px;
+  }
+
+
+  .access {
+    padding: 50px 0;
+  }
+
+
+  .access__inner {
+    display: block;
+  }
+
+
+  .access__inner li {
+    width: 100%;
+  }
+
+
+  .footer__inner {
+    text-align: end;
+  }
+
+  .footer__text {
+    margin-right: 10px;
+  }
+
+  
