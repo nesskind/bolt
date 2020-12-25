@@ -286,11 +286,6 @@ img {
 
 @media screen and (max-width:767px) {
 
-  .inner {
-    width: 97%;
-    text-align: center;
-  }
-
   .header__button {
     display: none;
   }
@@ -298,12 +293,12 @@ img {
     padding: 10px;
     border: 1px solid #ddd;
     box-sizing: border-box;
+    border-radius: 4px;
   }
   .hamburgerMenu span {
     width: 30px;
     height: 1px;
     background: #666;
-    border-radius: 4px;
     display: block;
     margin-top: 8px;
   }
@@ -316,7 +311,28 @@ img {
     padding: 160px 0 130px;
   }
 
+  .access {
+    padding: 50px 0;
+  }
 
+
+  .access__inner {
+    display: block;
+  }
+
+
+  .access__inner li {
+    width: 100%;
+  }
+
+}
+
+/* タブレット要素部分 */
+@media screen and (max-width:1199px) {
+  .inner {
+    width: 97%;
+    text-align: center;
+  }
   .WhatWeCanDo {
     padding: 50px 0;
   }
@@ -333,8 +349,6 @@ img {
   .sub__text {
     width: 97%;
   }
-
-
   .img__box {
     text-align: center;
     display: block;
@@ -350,10 +364,8 @@ img {
   }
 
   .img__box li:nth-child(4) {
-    margin-top: 60px;
+    margin-top: 80px;
   }
-
-
   .olw__e-mail {
     display: block;
   }
@@ -373,12 +385,6 @@ img {
     padding-top: 25px;
   }
 
-
-  .ourSkills {
-    width: 97%;
-  }
-
-
   .ourSkills__contents {
     text-align: center;
     display: block;
@@ -386,36 +392,20 @@ img {
 
 
   .ourSkills figure {
-    margin-left: 0;
+    margin: 88px 0 0 0;
   }
 
 
   .our__text {
-    margin: 20px 20px 60px;
+    margin-top: 30px;
   }
 
-
-  .access {
-    padding: 50px 0;
-  }
-
-
-  .access__inner {
-    display: block;
-  }
-
-
-  .access__inner li {
-    width: 100%;
-  }
-
-
-  .footer__inner {
-    text-align: end;
+  .ourSkills figure:first-child {
+    margin-top: 0;
   }
 
   .footer__text {
-    margin-right: 10px;
+    text-align: end;
   }
 
-  
+}
