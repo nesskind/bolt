@@ -125,7 +125,7 @@ img {
 /* article class="olw部分 */
 
 .olw {
-  padding: 60px 0 70px;
+  padding: 60px 0px;
 }
 
 .olw__title {
@@ -145,6 +145,7 @@ img {
   opacity: 0.7;
   margin-left: 100px;
   transition: 0.3s;
+  margin-top: 80px;
 }
 
 .img__box li:hover {
@@ -155,8 +156,8 @@ img {
   margin-left: 0;
 }
 
-.img__box li:nth-child(n+4) {
-  margin-top: 80px;
+.img__box li:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .img__box li a {
@@ -285,7 +286,6 @@ img {
 /* レスポンシブ対応部分 */
 
 @media screen and (max-width:767px) {
-
   .header__button {
     display: none;
   }
@@ -309,6 +309,12 @@ img {
 
   .boltTheme {
     padding: 160px 0 130px;
+  }
+
+  .sub__text {
+    width: 97%;
+    margin-left: 5px;
+    font-size: 25px;
   }
 
   .access {
@@ -339,21 +345,13 @@ img {
 
   .WhatWeCanDo__text {
     margin: 0;
-  }
-
-
-  .main__text {
     margin-top: 10px;
   }
 
-  .sub__text {
-    width: 97%;
-  }
   .img__box {
     text-align: center;
     display: block;
   }
-
 
   .img__box li {
     margin-left: 0;
@@ -370,31 +368,27 @@ img {
     display: block;
   }
 
-
   .olw__content__text {
     width: 97%;
+    margin-left: 5px;
   }
-
 
   .olw__button__link {
     margin-left: 0;
   }
 
-
   .olw__button {
-    padding-top: 25px;
+    margin-top: 25px;
   }
 
   .ourSkills__contents {
     text-align: center;
-    display: block;
+    flex-direction: column;
   }
-
 
   .ourSkills figure {
     margin: 88px 0 0 0;
   }
-
 
   .our__text {
     margin-top: 30px;
@@ -407,5 +401,4 @@ img {
   .footer__text {
     text-align: end;
   }
-
 }
