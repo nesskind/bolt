@@ -312,8 +312,7 @@ img {
   }
 
   .sub__text {
-    width: 97%;
-    margin-left: 5px;
+    width: 100%;
     font-size: 25px;
   }
 
@@ -357,20 +356,20 @@ img {
     margin-left: 0;
   }
 
-  .img__box li:nth-child(n+4) {
+  .img__box li:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .img__box li:first-child {
     margin-top: 0;
   }
 
-  .img__box li:nth-child(4) {
-    margin-top: 80px;
-  }
   .olw__e-mail {
     display: block;
   }
 
   .olw__content__text {
-    width: 97%;
-    margin-left: 5px;
+    width: 100%;
   }
 
   .olw__button__link {
