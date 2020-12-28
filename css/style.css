@@ -148,7 +148,7 @@ img {
   margin-top: 80px;
 }
 
-.img__box li:hover {
+.img__box li a:hover {
   opacity: 1;
 }
 
@@ -160,9 +160,9 @@ img {
   margin-top: 0;
 }
 
-.img__box li a {
+/* .img__box li a {
   display: block;
-}
+} */
 
   /* width: 20px;
   marginは要素との幅を取る
@@ -353,7 +353,7 @@ img {
   }
 
   .img__box li {
-    margin-left: 0;
+    margin: 0 0;
   }
 
   .img__box li:nth-child(3n+1) {
