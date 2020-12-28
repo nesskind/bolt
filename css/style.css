@@ -141,14 +141,16 @@ img {
 }
 
 .img__box li {
-  color: #fff;
-  opacity: 0.7;
   margin-left: 100px;
-  transition: 0.3s;
   margin-top: 80px;
 }
 
-.img__box li a:hover {
+.img__box a {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.img__box a:hover {
   opacity: 1;
 }
 
