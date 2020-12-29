@@ -55,7 +55,7 @@ img {
 
 .fa-bolt {
   font-size: 40px;
-  color:#4e4e4e ;
+  color:#4e4e4e;
 }
 
 .header__button {
@@ -286,60 +286,13 @@ img {
 }
 
 /* レスポンシブ対応部分 */
-
-@media screen and (max-width:767px) {
-  .header__button {
-    display: none;
-  }
-  .hamburgerMenu {
-    padding: 10px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-  .hamburgerMenu span {
-    width: 30px;
-    height: 1px;
-    background: #666;
-    display: block;
-    margin-top: 8px;
-  }
-
-  .hamburgerMenu span:first-child {
-    margin-top: 0;
-  }
-
-  .boltTheme {
-    padding: 160px 0 130px;
-  }
-
-  .sub__text {
-    width: 100%;
-    font-size: 25px;
-  }
-
-  .access {
-    padding: 50px 0 20px;
-  }
-
-
-  .access__inner {
-    display: block;
-  }
-
-
-  .access__inner li {
-    width: 100%;
-  }
-
-}
-
-/* タブレット要素部分 */
+/* TAB要素部分 */
 @media screen and (max-width:1199px) {
   .inner {
     width: 97%;
     text-align: center;
   }
+
   .WhatWeCanDo {
     padding: 50px 0 25px;
   }
@@ -347,6 +300,10 @@ img {
   .WhatWeCanDo__text {
     margin: 0;
     margin-top: 20px;
+  }
+
+  .sub__text {
+    width: 100%;
   }
 
   .img__box {
@@ -406,5 +363,52 @@ img {
 
   .footer__text {
     text-align: end;
+  }
+}
+
+/* SP部分 */
+@media screen and (max-width:767px) {
+  .header__button {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .hamburgerMenu span {
+    width: 30px;
+    height: 1px;
+    background: #666;
+    display: block;
+    margin-top: 8px;
+  }
+
+  .hamburgerMenu span:first-child {
+    margin-top: 0;
+  }
+
+  .boltTheme {
+    padding: 160px 0 130px;
+  }
+
+  .sub__text {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .access {
+    padding: 50px 0 20px;
+  }
+
+  .access__inner {
+    display: block;
+  }
+
+  .access__inner li {
+    width: 100%;
   }
 }
