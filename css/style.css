@@ -319,7 +319,7 @@ img {
   }
 
   .access {
-    padding: 50px 0;
+    padding: 50px 0 20px;
   }
 
 
@@ -341,12 +341,12 @@ img {
     text-align: center;
   }
   .WhatWeCanDo {
-    padding: 50px 0;
+    padding: 50px 0 25px;
   }
 
   .WhatWeCanDo__text {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .img__box {
@@ -366,8 +366,13 @@ img {
     margin-top: 0;
   }
 
+  .olw {
+    padding: 60px 0 70px;
+  }
+
   .olw__e-mail {
     display: block;
+    margin-top: 80px;
   }
 
   .olw__content__text {
@@ -379,7 +384,7 @@ img {
   }
 
   .olw__button {
-    margin-top: 25px;
+    margin-top: 40px;
   }
 
   .ourSkills__contents {
